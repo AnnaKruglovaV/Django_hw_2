@@ -1,0 +1,190 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-07-08T13:19:03.817Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Наушники",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-07-08T13:20:58.862Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Смартфоны",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-07-08T13:21:18.150Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Телевизоры",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-07-08T13:25:01.741Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Смартфон Apple iPhone 15 Pro",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-07-08T13:27:03.401Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Беспроводные наушники Apple AirPods 3rd",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-07-08T13:28:44.545Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Ultra HD (4K) QLED телевизор 65\"",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$KySdSyJSVGZ4liUZbpCMyz$0VD4RtL6YhrVhuxMjW3qjb4NrqitOOgwX8vMzAMLdgU=",
+      "last_login": "2024-07-08T12:18:15.937Z",
+      "is_superuser": true,
+      "username": "Anya",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-07-08T12:14:55.555Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "od9k98kiuaszz8e89mrbwzpcz9yc8g1t",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQAP_C2ZCFAgWP3vsGsiwgVQNJaU_GvxuSHvQ6M5k383jsxR89bX6N7MoEu_yygPRMdYj4wHpvnFrdtzXwkfDTdr60mF63s_0bFOxlbOMUFLgpq9k4KZITViqyBjQhSJcJIlqZhLIyZ2UzEcwwyewiAWqj2ecLwIs3Pw:1sQnJv:pqFm76I-TA1aqDmuLczx5rnO3KDGDjnw_V1WgTStUOA",
+      "expire_date": "2024-07-22T12:18:15.941Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Наушники",
+      "description": "Беспроводные наушники, наушники, Bluetooth-гарнитуры."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Смартфоны",
+      "description": "Смартфоны, кнопочные телефоны, домашние телефоны"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Телевизоры",
+      "description": ""
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Пылесосы",
+      "description": "Крутые пылесосы"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Смартфон Apple iPhone 15 Pro",
+      "description": "Смартфон Apple iPhone 15 Pro оснащен шестиядерным процессором А17 Pro. За счет этого устройство мгновенно реагирует на заданные команды, без задержек загружает медиафайлы из интернета.",
+      "photo": "product/photo/ca1d77ae-a8bd-4c49-ae6c-5f4d8138ac79.webp",
+      "category": 2,
+      "price": 114999,
+      "created_at": "2024-07-08",
+      "updated_at": "2024-07-08"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Беспроводные наушники Apple AirPods 3rd",
+      "description": "Беспроводные наушники с микрофоном Apple AirPods 3rd обеспечивают объемное звучание музыкальных композиций за счет усилителя с широким динамическим диапазоном.",
+      "photo": "product/photo/450x600.webp",
+      "category": 1,
+      "price": 22999,
+      "created_at": "2024-07-08",
+      "updated_at": "2024-07-08"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Ultra HD (4K) QLED телевизор 65\"",
+      "description": "Ultra HD (4K) QLED-телевизор 65\" позволяет наслаждаться любимыми фильмами, сериалами и передачами с детализированным изображением с разрешением 3840x2160 пикселей.",
+      "photo": "product/photo/7bdfe1d8-981e-4045-ae06-22abc4053d82.webp",
+      "category": 3,
+      "price": 54999,
+      "created_at": "2024-07-08",
+      "updated_at": "2024-07-08"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Пылесос",
+      "description": "Самый крутой пылесос",
+      "photo": "",
+      "category": null,
+      "price": null,
+      "created_at": null,
+      "updated_at": null
+    }
+  }
+]
