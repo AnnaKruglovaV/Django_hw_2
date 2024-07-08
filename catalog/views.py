@@ -7,9 +7,11 @@ def home(request):
     return render(request, 'home.html')
 
 
-def contact(request):
-    return render(request, 'catalog/contact.html')
+def contacts(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        phone = request.POST.get('phone')
+        message = request.POST.get('message')
+        print(f'{name} ({phone}): {message}')
 
-
-def index():
-    return None
+    return render(request, 'contacts.html')
