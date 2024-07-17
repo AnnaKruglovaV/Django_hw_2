@@ -9,7 +9,7 @@ class Command(BaseCommand):
 
     @staticmethod
     def read_json():
-        with open(f'{settings.BASE_DIR}\\db.json', encoding='utf-8') as file:
+        with open(f'{settings.BASE_DIR}/db.json', encoding='utf-8') as file:
             return json.load(file)
 
     def get_categories(self):
