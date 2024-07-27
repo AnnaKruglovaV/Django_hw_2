@@ -192,8 +192,10 @@
                 <p class="lead text-body-secondary">Главный эксперт по технике</p>
                 {% if user.is_authenticated %}
                 <p>
-                    <a class="btn btn-primary" href="{% url 'catalog:product_create' %}"
-                       role="button">Добавить продукт</a>
+                    <a class="btn btn-primary" href="{% url 'catalog:product_create' %}" role="button">Добавить
+                        продукт</a>
+                    <a href="{% url 'catalog:product_list' %}" class="btn btn-secondary my-2">Назад</a>
+                    <a href="{% url 'catalog:category_list' %}" class="btn btn-info my-2">Категории</a>
                 </p>
                 {% endif %}
             </div>
