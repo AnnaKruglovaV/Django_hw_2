@@ -23,8 +23,9 @@ class ContactsView(TemplateView):
         return context
 
 
-class ProductDetailView(DetailView):
+class ProductDetailView(DetailView, LoginRequiredMixin):
     model = Product
+    login_url = reverse_lazy('users:login')
 
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
@@ -95,6 +96,7 @@ class ProductUpdateView(LoginRequiredMixin, UpdateView):
 class ProductDeleteView(LoginRequiredMixin, DeleteView):
     model = Product
     success_url = reverse_lazy('catalog:product_list')
+    login_url = reverse_lazy('users:login')
 
     def get_form_class(self):
         user = self.request.user
